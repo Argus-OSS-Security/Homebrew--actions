@@ -1,13 +1,14 @@
 name: Test Setup SSH commit signing
 
-on:
-  pull_request:
-    paths:
-      - '**setup-commit-signing**'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'node_modules/**'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths:
+#       - '**setup-commit-signing**'
+#       - 'package.json'
+#       - 'package-lock.json'
+#       - 'node_modules/**'
+# 
 permissions:
   contents: read
 

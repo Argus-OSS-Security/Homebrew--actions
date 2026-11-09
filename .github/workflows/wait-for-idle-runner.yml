@@ -1,16 +1,17 @@
 name: Wait for idle runner
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    paths:
-      - "**wait-for-idle-runner**"
-      - "package.json"
-      - "package-lock.json"
-      - "node_modules/**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     paths:
+#       - "**wait-for-idle-runner**"
+#       - "package.json"
+#       - "package-lock.json"
+#       - "node_modules/**"
+# 
 permissions: {}
 
 jobs:

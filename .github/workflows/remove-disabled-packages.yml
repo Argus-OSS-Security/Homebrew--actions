@@ -1,17 +1,18 @@
 name: Test remove disabled packages
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-    paths:
-      - "**remove-disabled-packages**"
-      - "deprecate-master.sh"
-      - "package.json"
-      - "package-lock.json"
-      - "node_modules/**"
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     paths:
+#       - "**remove-disabled-packages**"
+#       - "deprecate-master.sh"
+#       - "package.json"
+#       - "package-lock.json"
+#       - "node_modules/**"
+# 
 permissions:
   contents: read
 

@@ -1,13 +1,14 @@
 # This file is synced from the `.github` repository, do not modify it directly.
 name: Actionlint
 
-on:
-  push:
-    branches:
-      - main
-      - master
-  pull_request:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#       - master
+#   pull_request:
+# 
 defaults:
   run:
     shell: bash -xeuo pipefail {0}

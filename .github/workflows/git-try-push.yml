@@ -1,13 +1,14 @@
 name: Git try push
 
-on:
-  pull_request:
-    paths:
-      - '**git-try-push**'
-      - 'package.json'
-      - 'package-lock.json'
-      - 'node_modules/**'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     paths:
+#       - '**git-try-push**'
+#       - 'package.json'
+#       - 'package-lock.json'
+#       - 'node_modules/**'
+# 
 permissions:
   contents: read
 

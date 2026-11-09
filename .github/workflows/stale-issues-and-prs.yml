@@ -1,17 +1,18 @@
 # This file is synced from the `.github` repository, do not modify it directly.
 name: Manage stale issues and pull requests
 
-on:
-  push:
-    paths:
-      - .github/workflows/stale-issues-and-prs.yml
-    branches-ignore:
-      - dependabot/**
-  schedule:
-    # Once every day at midnight UTC
-    - cron: "0 0 * * *"
-  issue_comment:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     paths:
+#       - .github/workflows/stale-issues-and-prs.yml
+#     branches-ignore:
+#       - dependabot/**
+#   schedule:
+#     # Once every day at midnight UTC
+#     - cron: "0 0 * * *"
+#   issue_comment:
+# 
 permissions: {}
 
 defaults:
